@@ -44,6 +44,5 @@ To run project
 rails s
 ```
 
-React part of project in folder /app/javascript/src
-
 Now go to http://localhost:3000 and wait while webpack compiles and then you can see project.
+React part of project in folder /app/javascript/src
