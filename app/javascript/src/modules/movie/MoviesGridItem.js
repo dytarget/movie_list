@@ -15,7 +15,6 @@ export const _MovieGridItem = ({ movie, deleteMovie }) => {
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
-              console.log("HELLO");
               deleteMovie(movie.id);
             }}
           >
