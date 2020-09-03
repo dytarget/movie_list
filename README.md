@@ -14,19 +14,25 @@ bundle install
 yarn
 ```
 
-Before you start initialize databse, make sure that you have existing role(your username). If you get error, that role doesn`t exists you can create it with following command:
+Run the commands to create database:
+
+```bash
+rails db:create
+```
+
+If you get error, that role doesn`t exists you can create it with following command and type role name in appeared line.:
 
 ```bash
 sudo -u postgres createuser --interactive
 ```
 
-type role name in appeared line.
-
-Run the command to create database:
+and continue following commands:
 
 ```bash
-rails db:create
 rails db:migrate
+```
+
+```bash
 rails db:seed
 ```
 
@@ -37,5 +43,7 @@ To run project
 ```python
 rails s
 ```
+
+React part of project in folder /app/javascript/src
 
 Now go to http://localhost:3000 and wait while webpack compiles and then you can see project.
