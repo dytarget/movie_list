@@ -23,7 +23,7 @@ const _MovielistPage = (props) => {
       <MovielistGrid movielists={props.movielistsReducer.movielists} />
       {props.movielistsReducer.error && (
         <Text textColor="rgba(232, 62, 76, 0.75)" textSize="1.5rem">
-          Occured error. Please check your steps, and try again!
+          Occurred error. Please check your steps, and try again!
         </Text>
       )}
 
