@@ -9,24 +9,22 @@ import { deleteMovie } from "../../actions";
 export const _MovieGridItem = ({ movie, deleteMovie }) => {
   return (
     <li>
-      <Link to={`/movie/${movie.id}`}>
-        <Container>
-          <IconContainer
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-              deleteMovie(movie.id);
-            }}
-          >
-            <Text textColor="white" textSize="1.2rem">
-              <TrashIcon />
-            </Text>
-          </IconContainer>
+      <Container>
+        <IconContainer
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            deleteMovie(movie.id);
+          }}
+        >
           <Text textColor="white" textSize="1.2rem">
-            {movie.attributes.name}
+            <TrashIcon />
           </Text>
-        </Container>
-      </Link>
+        </IconContainer>
+        <Text textColor="white" textSize="1.2rem">
+          {movie.attributes.name}
+        </Text>
+      </Container>
     </li>
   );
 };
